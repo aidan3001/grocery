@@ -1,3 +1,4 @@
+cont = ("yes")
 
 name = input("what's your name? ")
 
@@ -11,40 +12,44 @@ Beverages = {'rootbeer':'$2','sprite':'$2','monster':'$3.50','redbull':'$3','fan
 Frozen = {'ice cream':'$3.75','pizza':'$6','fries':'$4','breakfast sandwich':'$4','vegetables':'$5','pizza rolls':'$3.50','waffles':'$3','fish':'$6','chicken':'$5.50','hash browns':'$4'}
 Pharmacy = {'advil':'$7','tylenol':'$11','icyhot':'$8.40','vitamins':'$9','protein':'$18','toothpaste':'$2.50','deodorant':'$7','shampoo':'$9','soap':'$6','wipes':'$5'}
 
-sec = input("Please enter a section. ")
+while (cont == "yes"):
 
-if sec == 'produce':
-    
-    for key, value in Produce.items():
-        print(key, value)
+    sec = input("Please enter a section. ")
 
-elif sec == 'deli':
-    
-    for key, value in Deli.items():
-        print(key, value)
+    if sec == 'produce':
+        
+        for key, value in Produce.items():
+            print(key, value)
 
-elif sec == 'bakery':
-    
-    for key, value in Bakery.items():
-        print(key, value)
+    elif sec == 'deli':
+        
+        for key, value in Deli.items():
+            print(key, value)
 
-elif sec == 'alcohol':
-    
-    for key, value in Alcohol.items():
-        print(key, value)
+    elif sec == 'bakery':
+        
+        for key, value in Bakery.items():
+            print(key, value)
 
-elif sec == 'beverages':
-    
-    for key, value in Beverages.items():
-        print(key, value)
+    elif sec == 'alcohol':
+        
+        for key, value in Alcohol.items():
+            print(key, value)
 
-elif sec == 'frozen':
-    
-    for key, value in Frozen.items():
-        print(key, value)
+    elif sec == 'beverages':
+        
+        for key, value in Beverages.items():
+            print(key, value)
 
-elif sec == 'pharmacy':
-    
-    for key, value in Pharmacy.items():
-        print(key, value)
+    elif sec == 'frozen':
+        
+        for key, value in Frozen.items():
+            print(key, value)
+
+    elif sec == 'pharmacy':
+        
+        for key, value in Pharmacy.items():
+            print(key, value)
+
+    cont = input('Would you like to check the price of more items? ')
 
